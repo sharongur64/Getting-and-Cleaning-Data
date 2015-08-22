@@ -20,14 +20,13 @@ if (!file.exists("./data/getdata_projectfiles_UCI HAR Dataset.zip")) {
   list.files("./data")
 }
 
+#
+# read data
+#
 
 # read column labels
 data.label <- read.table("./data/UCI HAR Dataset/features.txt",
                          col.names = c("col.num","label"))
-
-#
-# read data
-#
 
 # get activity labels
 activity.label <- read.table("./data/UCI HAR Dataset/activity_labels.txt",
